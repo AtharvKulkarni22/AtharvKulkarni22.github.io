@@ -32,10 +32,10 @@ bio2: >-
   facts and encouraging models to reason through explicit symbolic representations.
 
 bio3: >-
-  Most recently, I was a Research Engineer Intern on the Granite Model Training Team at the
+  Most recently, I worked as a Research Engineer Intern on the Granite Model Training Team at the
   <a href="https://research.ibm.com/labs/yorktown-heights" target="_blank" rel="noopener">T. J. Watson Research Center</a>
   at <a href="https://research.ibm.com/artificial-intelligence" target="_blank" rel="noopener">IBM Research</a>.
-  My work focused on <strong>how to create useful training experience for long-horizon language-model agents</strong>.
+  My research focused on <strong>how to create useful training experience for long-horizon AI agents</strong>.
   As agents are asked to operate in richer environments, simply generating more tasks is not enough. The experience has to expose
   meaningful weaknesses in the agent while still remaining executable and verifiable. I worked on this problem by studying how
   agentic environments can be systematically made more challenging in ways that provide stronger signals for training and evaluation.
