@@ -171,6 +171,15 @@ title: Atharv Kulkarni
         <h3>{{ item.school }}</h3>
         <p class="degree">{{ item.degree }}</p>
         <p>{{ item.detail }}</p>
+
+        {% if item.thesis and item.thesis != "" %}
+        <p class="education-thesis">
+          <span>Thesis:</span>
+          <a href="{{ item.thesis_url }}" target="_blank" rel="noopener">
+            {{ item.thesis }}
+          </a>
+        </p>
+        {% endif %}
       </article>
       {% endfor %}
     </div>
