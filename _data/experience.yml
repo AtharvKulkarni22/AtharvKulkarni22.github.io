@@ -5,6 +5,13 @@
   advisor: "Prof. Mohit Bansal"
   advisor_url: "https://www.cs.unc.edu/~mbansal/"
   summary: "Research on reinforcement learning, LLM code generation, adaptive verification, and agentic AI."
+  details:
+    - >-
+      Developing reinforcement learning methods to improve memory and reasoning in agentic AI systems.
+    - >-
+      Developed reinforcement learning solutions for multi-agent AI in the domain of LLM based code generation at the MURGE lab.
+    - >-
+      First authored Debug or Regenerate? Test-Guided Selection for LLM Code Repair. In this work we developed a test-guided LLM code-repair framework that adaptively routes between debugging and regeneration, improving pass@1 across LeetCode, HumanEval+Fix, and LiveCodeBench. This paper has been accepted at EMNLP 2026 (Findings).
 
 - organization: "IBM Research"
   group: "Granite Model Training Team, T.J. Watson Research Center"
@@ -13,6 +20,15 @@
   advisor: "Dr. Yousaf Shah"
   advisor_url: ""
   summary: "Built reinforcement-learning environments and agentic datasets for long-horizon tool use, state tracking, reasoning, and multi-step decision making."
+  details:
+    - >-
+      Developed reinforcement-learning environments and agentic datasets for training and evaluating large language models on long-horizon tool use, state tracking, reasoning, and multi-step decision making.
+    - >-
+      First-authored “Agent Forest: Controlled Complexity Growth for RL environments via a multi-agent orchestration system” (under review at ICLR 2027).
+    - >-
+      In this work we developed Agent Forest, a multi-agent orchestration framework that transforms seed tasks into verified, progressively harder, and more diverse agentic tasks, introducing controlled difficulty through tool expansion, branching, memory, partial observability, and compositionality.
+    - >-
+      Expanded TAU2-Retail, TAU2-Airline, and General-Agent into hardened task collections reaching 388.6%, 338.0%, and 439.6% of their original seed-set sizes, respectively. Demonstrated that the generated tasks introduce meaningful agentic difficulty: Qwen 3.5 397B dropped from 75.4% → 54.7% Pass@1 on TAU2-Retail; Gemma 4 31B from 66.0% → 28.6% on TAU2-Airline and 68.8% → 25.6% on General-Agent; and GLM-5.2 from 72.0% → 53.6% on TAU2-Airline.
 
 - organization: "University of Pennsylvania"
   group: "Cognitive Computation Group"
@@ -21,6 +37,22 @@
   advisor: "Prof. Dan Roth & Prof. Vivek Gupta"
   advisor_url: "https://cogcomp.seas.upenn.edu/"
   summary: "Developed TEMPTABQA-C and symbolic methods for robust temporal reasoning over structured data."
+  details:
+    - >-
+      Dataset Creation: Designed and developed TEMPTABQA-C, a large controlled dataset for evaluating temporal tabular reasoning. Extracted temporal data from Wikipedia tables and transformed it into a structured relational database schema. Generated 100k question-answer pairs across categories such as original, counterfactual, and multi-step reasoning, providing a benchmark for systematic evaluation.
+    - >-
+      LLM Evaluation: Benchmarked state-of-the-art LLMs (GPT, Llama, Gemini, SQL Coder, Mixtral, Code Llama, etc.) using TEMPTABQA-C across zero-shot, few-shot, adaptive few-shot, chain-of-thought, faithful chain-of-thought, program-of-thought, plan & solve and CLEAR prompting setups. This analysis revealed limitations, including sensitivity to table size, counterfactual reasoning challenges, and reduced accuracy on complex queries​.
+    - |-
+      Symbolic Integration: Developed a symbolic intermediate representation by training LLMs to:
+      1. Structure unstructured tabular data into a schema and 2. Translate natural language questions to SQL before execution. This approach eliminated performance degradation by reducing hallucinations on
+      counterfactual and large context scenarios and enabling LLMs to use SQL as a reasoning tool and increasing accuracy from 59% to 73%
+    - |-
+      Addressing Core Challenges in LLMs: Demonstrated the effectiveness of symbolic integration in overcoming three key challenges in temporal reasoning for LLMs:
+      1. Counterfactual Robustness: Reduced performance gaps between original and counterfactual tables.
+      2. Scalability to Large Tables: Achieved consistent high accuracy even with large tables, unlike direct prompting methods.
+      3. Complex Queries: Improved performance on complex, multi-step and hierarchical questions, outperforming direct approaches in accuracy.
+    - >-
+      Paper Publication: First-authored "LLM-Symbolic Integration for Robust Temporal Tabular Reasoning," introducing TEMPTABQA-C and the symbolic framework. This paper is accepted in the ACL 2025 (Findings) conference.
 
 - organization: "University of Utah"
   group: "Utah NLP"
@@ -29,3 +61,20 @@
   advisor: "Prof. Vivek Srikumar"
   advisor_url: "https://svivek.com/"
   summary: "Studied execution-based reinforcement learning for code generation and structured reasoning."
+  details:
+    - >-
+      Developed a novel reinforcement learning (RL) pipeline that directly integrates an SQL execution engine into the LLM training loop. This approach enables models to learn from real execution feedback, optimizing for both syntactic validity and answer correctness in text-to-SQL generation.
+    - >-
+      Engineered a structured reward system that penalizes invalid queries and incrementally rewards partial and exact matches, combining syntactic checks, Relaxed Exact Match Score (REMS), and Exact Match Score (EMS) to guide learning toward complete and robust SQL generation.
+    - >-
+      Benchmarked multiple RL algorithms (including Monte Carlo REINFORCE, Proximal Policy Optimization (PPO), Group Relative Policy Optimization (GRPO), Odds Ratio Preference Optimization (ORPO), and REINFORCE Leave-One-Out (RLOO), demonstrating the effectiveness of GRPO for symbolic code generation without the need for a learned value network.
+    - >-
+      Leveraged the TEMPTABQA-C dataset to train and evaluate models on complex, multi-step temporal reasoning tasks—including counterfactual scenarios—highlighting improvements in both accuracy and generalization.
+    - >-
+      Implemented efficient fine-tuning using LoRA and leveraged NVIDIA NV-Link multi-GPU infrastructure to scale training.
+    - >-
+      Results: RL-tuned models improved SQL accuracy from 31.49% to 49.83% and reduced error rates from 25.43% to 14.71%. Our 7B RL-tuned model matched the performance of much larger 70B parameter models.
+    - >-
+      Impact: This work demonstrates that execution-based RL not only improves text-to-SQL performance and robustness, but also drives models toward better schema adherence and more interpretable, tool-augmented reasoning—bridging the gap to larger, resource-intensive models.
+    - >-
+      Paper Publication: First-authored "Reinforcing Code Generation: Improving Text-to-SQL with Execution-Based Learning", introducing the RL-approach and the tuned model.
