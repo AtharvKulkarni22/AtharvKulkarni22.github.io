@@ -1,0 +1,44 @@
+name: "Atharv Kulkarni"
+role: "M.S. Computer Science @ UNC Chapel Hill"
+tagline: "Reliable reasoning and learning for language models and agents."
+email: "athkulk@unc.edu"
+photo: "/assets/img/profile.jpg"
+resume: "/assets/docs/Atharv_Kulkarni_Resume.pdf"
+research_statement: "/assets/docs/Atharv_Kulkarni_Research_Statement.pdf"
+cv: ""  # Add /assets/docs/Atharv_Kulkarni_CV.pdf when you have a separate CV.
+
+bio: >-
+  I am an M.S. student in Computer Science at UNC Chapel Hill, advised by Prof. Mohit Bansal.
+  My research focuses on improving how language models reason and learn when fluent generation alone is not enough,
+  with an emphasis on reinforcement learning from verifiable feedback, code generation and repair, neuro-symbolic reasoning,
+  and long-horizon agents that interact with tools and stateful environments.
+
+bio2: >-
+  Previously, I completed my B.S. in Computer Science with a minor in Physics at the University of Utah,
+  worked with Prof. Vivek Srikumar, and conducted research with the Cognitive Computation Group at the University of Pennsylvania.
+  In 2026, I was a Research Engineer Intern on the Granite Model Training Team at IBM Research.
+
+interests:
+  - "RL for Language Models"
+  - "Verifiable Feedback"
+  - "Agentic AI"
+  - "Code Generation & Repair"
+  - "Neuro-Symbolic Reasoning"
+  - "Synthetic Data"
+
+links:
+  - label: "LinkedIn"
+    url: "https://www.linkedin.com/in/atharv-kulkarni-23a9a11ba/"
+    icon: "linkedin"
+  - label: "X"
+    url: "https://x.com/Atharvsk22"
+    icon: "x"
+  - label: "Google Scholar"
+    url: "https://scholar.google.com/citations?view_op=list_works&hl=en&user=9OaJFQoAAAAJ"
+    icon: "scholar"
+  - label: "GitHub"
+    url: "https://github.com/AtharvKulkarni22"
+    icon: "github"
+  - label: "Email"
+    url: "mailto:athkulk@unc.edu"
+    icon: "mail"

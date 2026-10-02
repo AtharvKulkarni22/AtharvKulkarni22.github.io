@@ -1,0 +1,55 @@
+- title: "Agent Forest: Controlled Complexity Growth for RL Environments via a Multi-Agent Orchestration System"
+  authors: "Atharv Kulkarni, Santosh Subhashrao Borse, Hajar Emami Gohari, Mohit Bansal, Yousaf Shah"
+  venue: "Under review at ICLR 2027"
+  year: 2026
+  status: "Under Review"
+  image: "/assets/img/agent-forest.png"
+  description: >-
+    A multi-agent framework that grows trusted agentic seed tasks into verified, increasingly complex descendants
+    through tool expansion, branching dependencies, memory, partial observability, and compositionality.
+  paper: ""
+  code: "https://github.com/AtharvKulkarni22/agent-forest"
+  project: ""
+  featured: true
+
+- title: "Debug or Regenerate? Test-Guided Selection for LLM Code Repair"
+  authors: "Atharv Kulkarni, Archiki Prasad, Vivek Srikumar, Elias Stengel-Eskin, Hyunji Lee, Mohit Bansal"
+  venue: "Findings of EMNLP 2026"
+  year: 2026
+  status: "Findings"
+  image: "/assets/img/patssel.png"
+  description: >-
+    PATSSEL treats code repair as a strategy-selection problem: generate both a debugged and regenerated solution,
+    use executable verifier tests as behavioral evidence, and select the stronger repair under a matched compute budget.
+  paper: "https://drive.google.com/file/d/1wmBGHu4NPWA7P5ofnHNWxzR1WiN5IfpJ/view?usp=sharing"
+  code: "https://github.com/AtharvKulkarni22/PATSSEL"
+  project: ""
+  featured: true
+
+- title: "Reinforcing Code Generation: Improving Text-to-SQL with Execution-Based Learning"
+  authors: "Atharv Kulkarni, Vivek Srikumar"
+  venue: "Preprint"
+  year: 2025
+  status: "Preprint"
+  image: "/assets/img/reinforcing-code.png"
+  description: >-
+    Trains language models to generate SQL using GRPO and direct database execution feedback rather than gold programs,
+    improving SQLCoder-7B exact match from 31.49% to 49.83% while reducing syntax errors.
+  paper: "https://arxiv.org/abs/2506.06093v1"
+  code: ""
+  project: ""
+  featured: true
+
+- title: "LLM-Symbolic Integration for Robust Temporal Tabular Reasoning"
+  authors: "Atharv Kulkarni, Kushagra Dixit, Vivek Srikumar, Dan Roth, Vivek Gupta"
+  venue: "Findings of ACL 2025"
+  year: 2025
+  status: "ACL Findings"
+  image: "/assets/img/llm-symbolic.png"
+  description: >-
+    Introduces TEMPTABQA-C and a symbolic intermediate representation that converts tables into database schemas
+    and uses executable SQL to make temporal tabular reasoning more robust to counterfactuals, scale, and complexity.
+  paper: "https://aclanthology.org/2025.findings-acl.1022/"
+  code: "https://github.com/CoRAL-ASU/TEMPTABQA-C"
+  project: "https://coral-lab-asu.github.io/llm_symbolic/"
+  featured: true

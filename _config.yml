@@ -1,0 +1,19 @@
+title: "Atharv Kulkarni"
+description: "Researcher working on reliable reasoning and learning for language models and agents."
+url: "https://atharvkulkarni22.github.io"
+baseurl: ""
+email: "athkulk@unc.edu"
+repository: "AtharvKulkarni22/AtharvKulkarni22.github.io"
+
+markdown: kramdown
+permalink: pretty
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
