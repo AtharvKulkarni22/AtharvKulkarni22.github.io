@@ -31,8 +31,13 @@ title: Atharv Kulkarni
 
 <main>
   <section class="hero shell" id="about">
+<<<<<<< HEAD
     <div class="hero-top">
       <div class="hero-intro reveal">
+=======
+    <div class="hero-top reveal">
+      <div class="hero-intro">
+>>>>>>> eefe523 (Fix layout and interaction issues)
         <div class="eyebrow">{{ p.role }}</div>
         <h1>{{ p.name }}</h1>
         <p class="hero-tagline">{{ p.tagline }}</p>
@@ -48,6 +53,7 @@ title: Atharv Kulkarni
         </div>
       </div>
 
+<<<<<<< HEAD
       <div class="hero-visual reveal" aria-label="Portrait of Atharv Kulkarni">
         <div class="photo-frame">
           <img src="{{ p.photo | relative_url }}" alt="Atharv Kulkarni" fetchpriority="high">
@@ -58,6 +64,12 @@ title: Atharv Kulkarni
             {% for interest in p.interests %}<span>{{ interest }}</span>{% endfor %}
           </div>
         </div>
+=======
+      <div class="hero-visual" aria-label="Portrait of Atharv Kulkarni">
+        <div class="photo-frame">
+          <img src="{{ p.photo | relative_url }}" alt="Atharv Kulkarni" fetchpriority="high">
+        </div>
+>>>>>>> eefe523 (Fix layout and interaction issues)
       </div>
     </div>
 
@@ -90,7 +102,10 @@ title: Atharv Kulkarni
 
     <div class="publication-list">
       {% for pub in site.data.publications %}
+<<<<<<< HEAD
       {% assign abstract_id = 'abstract-' | append: forloop.index %}
+=======
+>>>>>>> eefe523 (Fix layout and interaction issues)
       <article class="publication-entry reveal">
         <div class="publication-card">
           {% if pub.paper and pub.paper != "" %}
@@ -102,27 +117,49 @@ title: Atharv Kulkarni
             <img src="{{ pub.image | relative_url }}?v={{ site.time | date: '%s' }}" alt="Figure from {{ pub.title }}" loading="lazy">
           </div>
           {% endif %}
+<<<<<<< HEAD
+=======
+
+>>>>>>> eefe523 (Fix layout and interaction issues)
           <div class="pub-content">
             <div class="pub-meta">
               <span class="pub-year">{{ pub.year }}</span>
               <span class="pub-status">{{ pub.status }}</span>
             </div>
             <h3>{{ pub.title }}</h3>
+<<<<<<< HEAD
             <p class="pub-authors">{{ pub.authors | replace: 'Atharv Kulkarni', '<strong>Atharv Kulkarni</strong>' }}</p>
             <p class="pub-venue">{{ pub.venue }}</p>
             <p class="pub-description">{{ pub.description }}</p>
             <div class="pub-links">
               <button class="pub-link-button abstract-toggle" type="button" aria-expanded="false" aria-controls="{{ abstract_id }}">Abstract</button>
+=======
+            <p class="pub-venue">{{ pub.venue }}</p>
+            <p class="pub-authors">{{ pub.authors | replace: 'Atharv Kulkarni', '<strong>Atharv Kulkarni</strong>' }}</p>
+            <p class="pub-description">{{ pub.description }}</p>
+
+            <div class="pub-links">
+>>>>>>> eefe523 (Fix layout and interaction issues)
               {% if pub.paper and pub.paper != "" %}<a href="{{ pub.paper }}" target="_blank" rel="noopener">Paper</a>{% endif %}
               {% if pub.code and pub.code != "" %}<a href="{{ pub.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
               {% if pub.project and pub.project != "" %}<a href="{{ pub.project }}" target="_blank" rel="noopener">Project</a>{% endif %}
             </div>
           </div>
+<<<<<<< HEAD
         </div>
         <div class="pub-abstract" id="{{ abstract_id }}" hidden>
           <h4>Abstract</h4>
           <p>{{ pub.abstract }}</p>
+=======
+>>>>>>> eefe523 (Fix layout and interaction issues)
         </div>
+
+        <details class="pub-abstract-wrap">
+          <summary>Abstract</summary>
+          <div class="pub-abstract">
+            <p>{{ pub.abstract }}</p>
+          </div>
+        </details>
       </article>
       {% endfor %}
     </div>
@@ -148,6 +185,7 @@ title: Atharv Kulkarni
           {% endif %}
           <p class="timeline-summary">{{ exp.summary }}</p>
           {% if exp.details %}
+<<<<<<< HEAD
           <button class="experience-toggle" type="button" aria-expanded="false" aria-controls="{{ details_id }}">See more</button>
           <div class="experience-details" id="{{ details_id }}" hidden>
             <ul>
@@ -156,6 +194,18 @@ title: Atharv Kulkarni
               {% endfor %}
             </ul>
           </div>
+=======
+          <details class="experience-more">
+            <summary>See more</summary>
+            <div class="experience-details">
+              <ul>
+                {% for detail in exp.details %}
+                <li>{{ detail | newline_to_br }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </details>
+>>>>>>> eefe523 (Fix layout and interaction issues)
           {% endif %}
         </div>
       </article>
@@ -178,7 +228,14 @@ title: Atharv Kulkarni
     </div>
   </section>
 
+<<<<<<< HEAD
   <section class="social-section shell reveal" aria-label="Profile links">
+=======
+  <section class="section shell social-section reveal" aria-label="Profile links">
+    <div class="section-heading">
+      <h2>Links</h2>
+    </div>
+>>>>>>> eefe523 (Fix layout and interaction issues)
     <div class="social-links-large">
       {% for link in p.links %}
       <a href="{{ link.url }}" {% unless link.url contains 'mailto:' %}target="_blank" rel="noopener"{% endunless %} aria-label="{{ link.label }}">
