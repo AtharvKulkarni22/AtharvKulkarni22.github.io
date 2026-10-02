@@ -40,25 +40,3 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.08 });
 
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
-
-document.querySelectorAll('.abstract-toggle').forEach((button) => {
-  button.addEventListener('click', () => {
-    const panel = document.getElementById(button.getAttribute('aria-controls'));
-    if (!panel) return;
-    const isOpen = button.getAttribute('aria-expanded') === 'true';
-    button.setAttribute('aria-expanded', String(!isOpen));
-    panel.hidden = isOpen;
-    button.textContent = isOpen ? 'Abstract' : 'Hide abstract';
-  });
-});
-
-document.querySelectorAll('.experience-toggle').forEach((button) => {
-  button.addEventListener('click', () => {
-    const panel = document.getElementById(button.getAttribute('aria-controls'));
-    if (!panel) return;
-    const isOpen = button.getAttribute('aria-expanded') === 'true';
-    button.setAttribute('aria-expanded', String(!isOpen));
-    panel.hidden = isOpen;
-    button.textContent = isOpen ? 'See more' : 'See less';
-  });
-});
