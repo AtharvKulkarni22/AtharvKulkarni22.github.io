@@ -8,15 +8,37 @@ research_statement: "/assets/docs/Atharv_Kulkarni_Research_Statement.pdf"
 cv: ""  # Add /assets/docs/Atharv_Kulkarni_CV.pdf when you have a separate CV.
 
 bio: >-
-  I am an M.S. student in Computer Science at UNC Chapel Hill, advised by Prof. Mohit Bansal.
-  My research focuses on improving how language models reason and learn when fluent generation alone is not enough,
-  with an emphasis on reinforcement learning from verifiable feedback, code generation and repair, neuro-symbolic reasoning,
-  and long-horizon agents that interact with tools and stateful environments.
+  I am an M.S. student in Computer Science at UNC Chapel Hill, advised by
+  <a href="https://www.cs.unc.edu/~mbansal/" target="_blank" rel="noopener">Prof. Mohit Bansal</a>.
+  At the <a href="https://murgelab.cs.unc.edu/" target="_blank" rel="noopener">MURGe Lab</a>,
+  my research focuses on <strong>how language models can learn to reason more reliably through interaction and feedback</strong>.
+  I am particularly interested in reinforcement learning for language models, where the model can improve from the consequences
+  of its own behavior rather than only from static supervision. I am also interested in how these ideas extend to
+  <strong>agentic systems</strong>, where models must reason over longer interactions and learn from the outcomes of their actions
+  in an environment. More generally, I want to understand what enables a model to move beyond pattern matching toward reasoning
+  that is grounded in the problem it is solving. I am also increasingly interested in
+  <strong>how knowledge is represented and stored inside language models</strong>, and how that knowledge shapes reasoning and
+  changes through learning.
 
 bio2: >-
-  Previously, I completed my B.S. in Computer Science with a minor in Physics at the University of Utah,
-  worked with Prof. Vivek Srikumar, and conducted research with the Cognitive Computation Group at the University of Pennsylvania.
-  In 2026, I was a Research Engineer Intern on the Granite Model Training Team at IBM Research.
+  I completed my B.S. in Computer Science at the University of Utah, where I had the privilege of completing my bachelor’s thesis
+  under <a href="https://svivek.com/" target="_blank" rel="noopener">Prof. Vivek Srikumar</a>.
+  My work there focused on learning from execution and environmental feedback as a way to improve language-model reasoning.
+  Previously, I also worked as a Research Programmer with the
+  <a href="https://cogcomp.seas.upenn.edu/" target="_blank" rel="noopener">Cognitive Computation Group at the University of Pennsylvania</a>
+  under <a href="https://www.cis.upenn.edu/~danroth/" target="_blank" rel="noopener">Prof. Dan Roth</a> and
+  <a href="https://scholar.google.com/citations?user=Bs5H0S4AAAAJ&amp;hl=en" target="_blank" rel="noopener">Prof. Vivek Gupta</a>,
+  where I studied how to make language-model reasoning over structured information more reliable by reducing reliance on memorized
+  facts and encouraging models to reason through explicit symbolic representations.
+
+bio3: >-
+  Most recently, I was a Research Engineer Intern on the Granite Model Training Team at the
+  <a href="https://research.ibm.com/labs/yorktown-heights" target="_blank" rel="noopener">T. J. Watson Research Center</a>
+  at <a href="https://research.ibm.com/artificial-intelligence" target="_blank" rel="noopener">IBM Research</a>.
+  My work focused on <strong>how to create useful training experience for long-horizon language-model agents</strong>.
+  As agents are asked to operate in richer environments, simply generating more tasks is not enough. The experience has to expose
+  meaningful weaknesses in the agent while still remaining executable and verifiable. I worked on this problem by studying how
+  agentic environments can be systematically made more challenging in ways that provide stronger signals for training and evaluation.
 
 interests:
   - "RL for Language Models"
