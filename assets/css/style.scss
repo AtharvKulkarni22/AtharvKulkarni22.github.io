@@ -96,7 +96,7 @@ html[data-theme="dark"] .theme-icon-moon { display: block; }
   font-size: 14px;
   font-weight: 800;
 }
-.hero h1 { margin: 14px 0 8px; font-size: clamp(56px, 7vw, 90px); line-height: .96; letter-spacing: -0.055em; font-weight: 790; }
+.hero h1 { margin: 14px 0 8px; font-size: clamp(56px, 7vw, 90px); line-height: .96; letter-spacing: -0.02em; font-weight: 790; }
 .hero-tagline { margin: 0; max-width: 680px; font-size: clamp(25px, 2.7vw, 36px); line-height: 1.22; letter-spacing: -0.03em; color: var(--text); font-weight: 570; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 .button { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 18px; border-radius: 14px; font-size: 15px; font-weight: 700; border: 1px solid var(--line); transition: transform 150ms ease, border-color 150ms ease, background 150ms ease; }
