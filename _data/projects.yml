@@ -43,3 +43,14 @@
   - MariaDB
   - Azure SQL
   code: https://github.com/AtharvKulkarni22/CS5530_Database_Systems
+- domain: Multimodal Reasoning
+  title: Grounded Answer Updating for Multi-Timestamp Video Question Answering
+  description: Studied answer updating in dynamic video question answering, where the correct answer can change as visual evidence evolves over time. Developed a structured grouped-answer framework for Qwen2.5-VL-7B and trained it with GRPO using a schema-gated curriculum reward, improving overall accuracy on RTV-Bench from 38.57% to 56.37% while strengthening consistency across temporally related questions.
+  tags:
+  - VLMs
+  - GRPO
+  - Video Datasets
+  - Multimodal Reasoning
+  - SLURM
+  code: https://github.com/AtharvKulkarni22/GAP_MTVQA
+  report: https://drive.google.com/file/d/1suwCGvb9RVW0Mts40x8DA-s3CCspu0VZ/view?usp=sharing
