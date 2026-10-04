@@ -20,8 +20,8 @@ title: Atharv Kulkarni
       <a class="section-nav" href="#publications">Publications</a>
       <a class="section-nav" href="#experience">Experience</a>
       <a class="section-nav" href="#projects">Projects</a>
-      <a class="nav-doc" href="{{ p.research_statement | relative_url }}" target="_blank" rel="noopener">Research Statement</a>
-      <a class="nav-doc" href="{{ p.resume | relative_url }}" target="_blank" rel="noopener">Resume</a>
+      <a class="nav-doc" href="{{ p.research_statement | relative_url }}?v={{ site.time | date: '%s' }}" target="_blank" rel="noopener">Research Statement</a>
+      <a class="nav-doc" href="{{ p.resume | relative_url }}?v={{ site.time | date: '%s' }}" target="_blank" rel="noopener">Resume</a>
       <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
         <svg class="theme-icon theme-icon-sun" aria-hidden="true"><use href="#icon-sun"></use></svg>
         <svg class="theme-icon theme-icon-moon" aria-hidden="true"><use href="#icon-moon"></use></svg>
@@ -39,10 +39,10 @@ title: Atharv Kulkarni
         <p class="hero-tagline">{{ p.tagline }}</p>
 
         <div class="hero-actions">
-          <a class="button button-primary" href="{{ p.resume | relative_url }}" target="_blank" rel="noopener">
+          <a class="button button-primary" href="{{ p.resume | relative_url }}?v={{ site.time | date: '%s' }}" target="_blank" rel="noopener">
             Resume <svg aria-hidden="true"><use href="#icon-arrow"></use></svg>
           </a>
-          <a class="button button-primary" href="{{ p.research_statement | relative_url }}" target="_blank" rel="noopener">Research Statement <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+          <a class="button button-primary" href="{{ p.research_statement | relative_url }}?v={{ site.time | date: '%s' }}" target="_blank" rel="noopener">Research Statement <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
           {% if p.cv and p.cv != "" %}
           <a class="button button-secondary" href="{{ p.cv | relative_url }}" target="_blank" rel="noopener">CV</a>
           {% endif %}
