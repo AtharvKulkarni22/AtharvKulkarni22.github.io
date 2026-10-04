@@ -380,8 +380,8 @@ html[data-theme="dark"] .theme-icon-moon { display: block; }
 }
 
 .timeline-logo {
-  width: 118px;
-  height: 72px;
+  width: 150px;
+  height: 92px;
   margin-top: 18px;
   display: flex;
   align-items: center;
@@ -390,8 +390,8 @@ html[data-theme="dark"] .theme-icon-moon { display: block; }
 
 .timeline-logo img {
   display: block;
-  max-width: 112px;
-  max-height: 68px;
+  max-width: 144px;
+  max-height: 88px;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -436,9 +436,9 @@ html[data-theme="dark"] .timeline-logo-dark {
 }
 
 .education-logo {
-  width: 112px;
-  height: 76px;
-  flex: 0 0 112px;
+  width: 145px;
+  height: 96px;
+  flex: 0 0 145px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -446,8 +446,8 @@ html[data-theme="dark"] .timeline-logo-dark {
 
 .education-logo img {
   display: block;
-  max-width: 108px;
-  max-height: 72px;
+  max-width: 138px;
+  max-height: 92px;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -463,14 +463,14 @@ html[data-theme="dark"] .timeline-logo-dark {
   }
 
   .timeline-logo {
-    width: 88px;
-    height: 48px;
+    width: 105px;
+    height: 60px;
     margin-top: 0;
   }
 
   .timeline-logo img {
-    max-width: 84px;
-    max-height: 46px;
+    max-width: 100px;
+    max-height: 56px;
   }
 }
 
@@ -480,14 +480,14 @@ html[data-theme="dark"] .timeline-logo-dark {
   }
 
   .education-logo {
-    width: 82px;
-    height: 58px;
-    flex-basis: 82px;
+    width: 96px;
+    height: 68px;
+    flex-basis: 96px;
   }
 
   .education-logo img {
-    max-width: 80px;
-    max-height: 56px;
+    max-width: 92px;
+    max-height: 64px;
   }
 }
 
