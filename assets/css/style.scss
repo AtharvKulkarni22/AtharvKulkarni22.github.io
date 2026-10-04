@@ -371,6 +371,126 @@ html[data-theme="dark"] .theme-icon-moon { display: block; }
 
 
 
+
+
+/* Research experience and education logos */
+.timeline-meta {
+  min-width: 0;
+  padding-top: 2px;
+}
+
+.timeline-logo {
+  width: 118px;
+  height: 72px;
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.timeline-logo img {
+  display: block;
+  max-width: 112px;
+  max-height: 68px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.timeline-logo-theme {
+  position: relative;
+}
+
+.timeline-logo-theme .timeline-logo-light,
+.timeline-logo-theme .timeline-logo-dark {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline-logo-dark {
+  display: none !important;
+}
+
+html[data-theme="dark"] .timeline-logo-light {
+  display: none !important;
+}
+
+html[data-theme="dark"] .timeline-logo-dark {
+  display: block !important;
+}
+
+.education-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  margin-bottom: 6px;
+}
+
+.education-card-header h3 {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+}
+
+.education-logo {
+  width: 112px;
+  height: 76px;
+  flex: 0 0 112px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.education-logo img {
+  display: block;
+  max-width: 108px;
+  max-height: 72px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 860px) {
+  .timeline-meta {
+    order: 2;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .timeline-logo {
+    width: 88px;
+    height: 48px;
+    margin-top: 0;
+  }
+
+  .timeline-logo img {
+    max-width: 84px;
+    max-height: 46px;
+  }
+}
+
+@media (max-width: 560px) {
+  .education-card-header {
+    align-items: flex-start;
+  }
+
+  .education-logo {
+    width: 82px;
+    height: 58px;
+    flex-basis: 82px;
+  }
+
+  .education-logo img {
+    max-width: 80px;
+    max-height: 56px;
+  }
+}
+
 /* Selected Projects */
 .projects-grid {
   display: grid;

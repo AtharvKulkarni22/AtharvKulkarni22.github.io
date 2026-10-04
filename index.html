@@ -134,7 +134,19 @@ title: Atharv Kulkarni
       {% for exp in site.data.experience %}
       <article class="timeline-item">
         <div class="timeline-marker" aria-hidden="true"></div>
-        <div class="timeline-period">{{ exp.period }}</div>
+        <div class="timeline-meta">
+          <div class="timeline-period">{{ exp.period }}</div>
+          {% if exp.logo_light and exp.logo_dark %}
+          <div class="timeline-logo timeline-logo-theme" aria-label="{{ exp.logo_alt }}">
+            <img class="timeline-logo-light" src="{{ exp.logo_light | relative_url }}" alt="{{ exp.logo_alt }}" loading="lazy">
+            <img class="timeline-logo-dark" src="{{ exp.logo_dark | relative_url }}" alt="{{ exp.logo_alt }}" loading="lazy">
+          </div>
+          {% elsif exp.logo %}
+          <div class="timeline-logo" aria-label="{{ exp.logo_alt }}">
+            <img src="{{ exp.logo | relative_url }}" alt="{{ exp.logo_alt }}" loading="lazy">
+          </div>
+          {% endif %}
+        </div>
         <div class="timeline-body">
           <h3>{{ exp.role }}</h3>
           <p class="timeline-org">{{ exp.organization }}{% if exp.group %} · {{ exp.group }}{% endif %}</p>
@@ -169,7 +181,14 @@ title: Atharv Kulkarni
     <div class="education-grid reveal">
       {% for item in site.data.education %}
       <article class="education-card">
-        <h3>{{ item.school }}</h3>
+        <div class="education-card-header">
+          <h3>{{ item.school }}</h3>
+          {% if item.logo %}
+          <div class="education-logo" aria-label="{{ item.logo_alt }}">
+            <img src="{{ item.logo | relative_url }}" alt="{{ item.logo_alt }}" loading="lazy">
+          </div>
+          {% endif %}
+        </div>
         <p class="degree">{{ item.degree }}</p>
         {% if item.advisor and item.advisor_url %}
         <p class="education-detail">

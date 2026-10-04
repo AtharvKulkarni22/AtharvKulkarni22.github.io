@@ -3,6 +3,8 @@
   detail: 'Advisor: Prof. Mohit Bansal'
   advisor: Prof. Mohit Bansal
   advisor_url: https://www.cs.unc.edu/~mbansal/
+  logo: /assets/img/Unc_ChapelHill.png
+  logo_alt: University of North Carolina at Chapel Hill
 - school: University of Utah
   degree: B.S. in Computer Science, Minor in Physics
   detail: 'Advisor: Prof. Vivek Srikumar · UROP Award'
@@ -11,3 +13,5 @@
   advisor: Prof. Vivek Srikumar
   advisor_url: https://svivek.com/
   award: UROP Award
+  logo: /assets/img/UofU.png
+  logo_alt: University of Utah
