@@ -380,8 +380,8 @@ html[data-theme="dark"] .theme-icon-moon { display: block; }
 }
 
 .timeline-logo {
-  width: 150px;
-  height: 92px;
+  width: 160px;
+  height: 108px;
   margin-top: 18px;
   display: flex;
   align-items: center;
@@ -390,8 +390,8 @@ html[data-theme="dark"] .theme-icon-moon { display: block; }
 
 .timeline-logo img {
   display: block;
-  max-width: 144px;
-  max-height: 88px;
+  max-width: 154px;
+  max-height: 102px;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -423,7 +423,7 @@ html[data-theme="dark"] .timeline-logo-dark {
 
 .education-card-header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 22px;
   margin-bottom: 6px;
@@ -436,9 +436,9 @@ html[data-theme="dark"] .timeline-logo-dark {
 }
 
 .education-logo {
-  width: 145px;
-  height: 96px;
-  flex: 0 0 145px;
+  width: 170px;
+  height: 118px;
+  flex: 0 0 170px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -446,8 +446,8 @@ html[data-theme="dark"] .timeline-logo-dark {
 
 .education-logo img {
   display: block;
-  max-width: 138px;
-  max-height: 92px;
+  max-width: 164px;
+  max-height: 110px;
   width: auto;
   height: auto;
   object-fit: contain;

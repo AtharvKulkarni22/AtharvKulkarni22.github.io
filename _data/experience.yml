@@ -10,8 +10,8 @@
   - 'First-authored “Agent Forest: Controlled Complexity Growth for RL environments via a multi-agent orchestration system” (under review at ICLR 2027).'
   - In this work we developed Agent Forest, a multi-agent orchestration framework that transforms seed tasks into verified, progressively harder, and more diverse agentic tasks, introducing controlled difficulty through tool expansion, branching, memory, partial observability, and compositionality.
   - 'Expanded TAU2-Retail, TAU2-Airline, and General-Agent into hardened task collections reaching 388.6%, 338.0%, and 439.6% of their original seed-set sizes, respectively. Demonstrated that the generated tasks introduce meaningful agentic difficulty: Qwen 3.5 397B dropped from 75.4% → 54.7% Pass@1 on TAU2-Retail; Gemma 4 31B from 66.0% → 28.6% on TAU2-Airline and 68.8% → 25.6% on General-Agent; and GLM-5.2 from 72.0% → 53.6% on TAU2-Airline.'
-  logo_light: /assets/img/ibm_logo_black.png
-  logo_dark: /assets/img/ibm_logo_white.png
+  logo_light: /assets/img/ibm_logo_white.png
+  logo_dark: /assets/img/ibm_logo_black.png
   logo_alt: IBM Research
 - organization: University of North Carolina at Chapel Hill
   group: MURGe Lab
