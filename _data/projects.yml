@@ -1,0 +1,45 @@
+- domain: Machine Learning
+  title: Implementation of a Machine Learning Library
+  description: Developed a machine learning library from scratch by implementing Random Forest, logistic regression, perceptron, support vector machines, and a neural network. Applied the library to a downstream prediction task using TF-IDF and categorical features to evaluate the implemented methods in a practical setting.
+  tags:
+  - Python
+  - NumPy
+  - Pandas
+  - Machine Learning
+  code: https://github.com/AtharvKulkarni22/CS6350_Machine_Learning
+- domain: Natural Language Processing
+  title: Neural Natural Language Processing and Transformer Modeling
+  description: Implemented neural NLP models in PyTorch, including a Deep Averaging Network with GloVe embeddings and Transformer language models with multi-head attention, positional encodings, and causal masking. The work also examined robustness to noisy text through embedding optimization and misspelling correction.
+  tags:
+  - PyTorch
+  - Transformers
+  - GloVe
+  - NLP
+  code: https://github.com/AtharvKulkarni22/CS6340_Natural_Language_Processing
+- domain: Reinforcement Learning
+  title: Reinforcement Learning and Sequential Decision-Making
+  description: Implemented and evaluated reinforcement-learning methods spanning imitation learning, multi-armed bandits, dynamic programming, Q-learning, deep Q-networks, REINFORCE, and actor-critic methods. Experiments covered discrete and continuous-control environments including MountainCar, Blackjack, LunarLander, CartPole, and MuJoCo tasks.
+  tags:
+  - PyTorch
+  - OpenAI Gym
+  - MuJoCo
+  - Reinforcement Learning
+  code: https://github.com/AtharvKulkarni22/CS_6955_Reinforcement_Learning
+- domain: Deep Learning
+  title: Deep Learning for Vision, Sequence Modeling, and Generative Models
+  description: Implemented deep-learning architectures across image classification, sequence modeling, and generative modeling, including fully connected networks, convolutional neural networks, recurrent models, and generative adversarial networks. The work emphasized model implementation, optimization, and evaluation across vision and sequential-data tasks.
+  tags:
+  - PyTorch
+  - CNNs
+  - RNNs
+  - GANs
+  code: https://github.com/AtharvKulkarni22/CS6353_Deep_Learning
+- domain: Database Systems
+  title: Relational Database Design and Deployment for Learning Management Systems
+  description: Designed and implemented the relational database backend for a learning-management system, covering ER modeling, normalized schemas, stored procedures, triggers, and application-facing SQL queries. The database was deployed on Azure SQL with attention to data integrity, automation, and query performance.
+  tags:
+  - Java
+  - MySQL
+  - MariaDB
+  - Azure SQL
+  code: https://github.com/AtharvKulkarni22/CS5530_Database_Systems

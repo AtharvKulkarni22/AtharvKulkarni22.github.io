@@ -370,6 +370,113 @@ html[data-theme="dark"] .theme-icon-moon { display: block; }
 }
 
 
+
+/* Selected Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface);
+  box-shadow: 0 10px 28px rgba(27, 39, 55, .035);
+  transition: transform 170ms ease, border-color 170ms ease, box-shadow 170ms ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--accent) 38%, var(--line));
+  box-shadow: 0 16px 36px rgba(27, 39, 55, .07);
+}
+
+.project-domain {
+  margin-bottom: 10px;
+  color: var(--accent-strong);
+  font-size: 12.5px;
+  font-weight: 790;
+  letter-spacing: .10em;
+  text-transform: uppercase;
+}
+
+.project-card h3 {
+  margin: 0 0 13px;
+  color: var(--text);
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: -0.022em;
+}
+
+.project-description {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15.5px;
+  line-height: 1.68;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 19px;
+}
+
+.project-tags span {
+  padding: 5px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface-2) 86%, transparent);
+  color: var(--muted);
+  font-size: 12.5px;
+  font-weight: 650;
+  line-height: 1.25;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 22px;
+}
+
+.project-links a {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 17px;
+  border: 1px solid #315f84;
+  border-radius: 10px;
+  background: #315f84;
+  color: #fff;
+  font-size: 14.5px;
+  font-weight: 740;
+  transition: transform 150ms ease, background 150ms ease, border-color 150ms ease;
+}
+
+.project-links a:hover {
+  transform: translateY(-1px);
+  border-color: #3d75a1;
+  background: #3d75a1;
+  color: #fff;
+}
+
+@media (max-width: 860px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    min-height: 0;
+  }
+}
+
 /* Final navigation, CTA, publication-link, and contact polish */
 .nav .section-nav {
   position: relative;

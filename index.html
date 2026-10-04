@@ -19,6 +19,7 @@ title: Atharv Kulkarni
       <a class="section-nav" href="#news">News</a>
       <a class="section-nav" href="#publications">Publications</a>
       <a class="section-nav" href="#experience">Experience</a>
+      <a class="section-nav" href="#projects">Projects</a>
       <a class="nav-doc" href="{{ p.research_statement | relative_url }}" target="_blank" rel="noopener">Research Statement</a>
       <a class="nav-doc" href="{{ p.resume | relative_url }}" target="_blank" rel="noopener">Resume</a>
       <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
@@ -186,6 +187,32 @@ title: Atharv Kulkarni
           </a>
         </p>
         {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="section shell" id="projects">
+    <div class="section-heading reveal">
+      <h2>Selected Projects</h2>
+    </div>
+
+    <div class="projects-grid">
+      {% for project in site.data.projects %}
+      <article class="project-card reveal">
+        <div class="project-domain">{{ project.domain }}</div>
+        <h3>{{ project.title }}</h3>
+        <p class="project-description">{{ project.description }}</p>
+
+        <div class="project-tags" aria-label="Technologies used">
+          {% for tag in project.tags %}
+          <span>{{ tag }}</span>
+          {% endfor %}
+        </div>
+
+        <div class="project-links">
+          <a href="{{ project.code }}" target="_blank" rel="noopener">Code</a>
+        </div>
       </article>
       {% endfor %}
     </div>
