@@ -368,3 +368,147 @@ html[data-theme="dark"] .theme-icon-moon { display: block; }
   .social-links-large { grid-template-columns: 1fr; }
   .social-links-large a { justify-content: flex-start; }
 }
+
+
+/* Final navigation, CTA, publication-link, and contact polish */
+.nav .section-nav {
+  position: relative;
+}
+
+.nav .section-nav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--accent-strong);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 170ms ease;
+}
+
+.nav .section-nav.active {
+  color: var(--text);
+}
+
+.nav .section-nav.active::after {
+  transform: scaleX(1);
+}
+
+.button-primary {
+  color: #fff;
+  background: #2d5878;
+  border-color: #2d5878;
+}
+
+.button-primary:hover {
+  color: #fff;
+  background: #386d93;
+  border-color: #386d93;
+}
+
+.pub-links a {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-color: #315f84;
+  background: #315f84;
+  color: #fff;
+  font-size: 14.5px;
+  font-weight: 740;
+}
+
+.pub-links a:hover {
+  border-color: #3d75a1;
+  background: #3d75a1;
+  color: #fff;
+}
+
+.education-detail a {
+  color: var(--accent-strong);
+  font-weight: 680;
+}
+
+.education-detail a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.social-links-large {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.social-links-large a,
+.social-static-card {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 18px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+}
+
+.social-static-card {
+  cursor: default;
+}
+
+.social-static-card svg {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+}
+
+.social-card-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  line-height: 1.28;
+}
+
+.social-card-copy strong {
+  font-size: 17px;
+  font-weight: 740;
+  color: var(--text);
+}
+
+.social-card-copy small {
+  font-size: 13.5px;
+  font-weight: 560;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.footer-contact {
+  color: var(--muted);
+}
+
+@media (max-width: 760px) {
+  .nav .section-nav::after {
+    left: 10px;
+    right: 10px;
+    bottom: 3px;
+  }
+
+  .social-links-large {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .social-links-large {
+    grid-template-columns: 1fr;
+  }
+
+  .social-links-large a,
+  .social-static-card {
+    justify-content: flex-start;
+  }
+}

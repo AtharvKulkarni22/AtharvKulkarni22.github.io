@@ -15,10 +15,10 @@ title: Atharv Kulkarni
     </button>
 
     <nav class="nav" aria-label="Primary navigation">
-      <a href="#about">About</a>
-      <a href="#news">News</a>
-      <a href="#publications">Publications</a>
-      <a href="#experience">Experience</a>
+      <a class="section-nav" href="#about">About</a>
+      <a class="section-nav" href="#news">News</a>
+      <a class="section-nav" href="#publications">Publications</a>
+      <a class="section-nav" href="#experience">Experience</a>
       <a class="nav-doc" href="{{ p.research_statement | relative_url }}" target="_blank" rel="noopener">Research Statement</a>
       <a class="nav-doc" href="{{ p.resume | relative_url }}" target="_blank" rel="noopener">Resume</a>
       <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
@@ -41,7 +41,7 @@ title: Atharv Kulkarni
           <a class="button button-primary" href="{{ p.resume | relative_url }}" target="_blank" rel="noopener">
             Resume <svg aria-hidden="true"><use href="#icon-arrow"></use></svg>
           </a>
-          <a class="button button-secondary" href="{{ p.research_statement | relative_url }}" target="_blank" rel="noopener">Research Statement</a>
+          <a class="button button-primary" href="{{ p.research_statement | relative_url }}" target="_blank" rel="noopener">Research Statement <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
           {% if p.cv and p.cv != "" %}
           <a class="button button-secondary" href="{{ p.cv | relative_url }}" target="_blank" rel="noopener">CV</a>
           {% endif %}
@@ -170,7 +170,13 @@ title: Atharv Kulkarni
       <article class="education-card">
         <h3>{{ item.school }}</h3>
         <p class="degree">{{ item.degree }}</p>
+        {% if item.advisor and item.advisor_url %}
+        <p class="education-detail">
+          Advisor: <a href="{{ item.advisor_url }}" target="_blank" rel="noopener">{{ item.advisor }}</a>{% if item.award %} · {{ item.award }}{% endif %}
+        </p>
+        {% else %}
         <p>{{ item.detail }}</p>
+        {% endif %}
 
         {% if item.thesis and item.thesis != "" %}
         <p class="education-thesis">
@@ -191,11 +197,28 @@ title: Atharv Kulkarni
     </div>
     <div class="social-links-large">
       {% for link in p.links %}
-      <a href="{{ link.url }}" {% unless link.url contains 'mailto:' %}target="_blank" rel="noopener"{% endunless %} aria-label="{{ link.label }}">
-        <svg aria-hidden="true"><use href="#icon-{{ link.icon }}"></use></svg>
-        <span>{{ link.label }}</span>
-      </a>
+        {% if link.label == "Email" %}
+        <div class="social-static-card" aria-label="Email">
+          <svg aria-hidden="true"><use href="#icon-mail"></use></svg>
+          <span class="social-card-copy">
+            <strong>Email</strong>
+            <small>{{ p.email }}</small>
+          </span>
+        </div>
+        {% else %}
+        <a href="{{ link.url }}" target="_blank" rel="noopener" aria-label="{{ link.label }}">
+          <svg aria-hidden="true"><use href="#icon-{{ link.icon }}"></use></svg>
+          <span>{{ link.label }}</span>
+        </a>
+        {% endif %}
       {% endfor %}
+      <div class="social-static-card" aria-label="Phone">
+        <svg aria-hidden="true"><use href="#icon-phone"></use></svg>
+        <span class="social-card-copy">
+          <strong>Phone</strong>
+          <small>+1 8019199865</small>
+        </span>
+      </div>
     </div>
   </section>
 </main>
@@ -207,7 +230,7 @@ title: Atharv Kulkarni
       <span>Research in language models, reinforcement learning, and agents.</span>
     </div>
     <div class="footer-links">
-      <a href="mailto:{{ p.email }}">{{ p.email }}</a>
+      <span class="footer-contact">{{ p.email }}</span>
       <a href="#top">Back to top ↑</a>
     </div>
   </div>

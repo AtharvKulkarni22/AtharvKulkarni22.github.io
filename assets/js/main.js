@@ -40,3 +40,30 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.08 });
 
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+
+const sectionNavLinks = Array.from(document.querySelectorAll('.nav .section-nav'));
+const pageSections = Array.from(document.querySelectorAll('main section[id]'));
+
+function updateActiveSection() {
+  if (!sectionNavLinks.length || !pageSections.length) return;
+
+  const marker = window.scrollY + (header?.offsetHeight || 0) + 140;
+  let activeId = null;
+
+  pageSections.forEach((section) => {
+    if (section.offsetTop <= marker) {
+      activeId = section.id;
+    }
+  });
+
+  sectionNavLinks.forEach((link) => {
+    const targetId = link.getAttribute('href')?.replace('#', '');
+    link.classList.toggle('active', Boolean(activeId && targetId === activeId));
+  });
+}
+
+window.addEventListener('scroll', updateActiveSection, { passive: true });
+window.addEventListener('resize', updateActiveSection);
+window.addEventListener('load', updateActiveSection);
+updateActiveSection();
