@@ -1,13 +1,13 @@
 - school: University of North Carolina at Chapel Hill
   degree: M.S. in Computer Science (Thesis)
-  detail: 'Advisor: Prof. Mohit Bansal'
+  detail: 'Advisor: Prof. Mohit Bansal · GPA: 4.0'
   advisor: Prof. Mohit Bansal
   advisor_url: https://www.cs.unc.edu/~mbansal/
   logo: /assets/img/Unc_ChapelHill.png
   logo_alt: University of North Carolina at Chapel Hill
 - school: University of Utah
   degree: B.S. in Computer Science, Minor in Physics
-  detail: 'Advisor: Prof. Vivek Srikumar · UROP Award'
+  detail: 'Advisor: Prof. Vivek Srikumar · UROP Award · GPA: 3.5'
   thesis: Improving Complex Reasoning Skills in LLMs through Tool-based Neuro-Symbolic Methods
   thesis_url: https://drive.google.com/file/d/1CaSDcLs_CqWK2SIUWbA74tlf4H2fJzB6/view?usp=sharing
   advisor: Prof. Vivek Srikumar
